@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Book Search!</title>
+    <script src="LAB_7_SophiaW.js" defer></script>
+    <style>
+        #bookTable {
+            display: none;
+        }
+        #loading {
+            display: none;
+            font-weight: bold;
+            margin: 10px 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Let's Lookup some Books</h1>
+
+    <h2>Please enter a book name:</h2>
+    <form id="searchForm">
+        <input type="text" id="bookInput" placeholder="Enter book name" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="loading">Please wait while we load the books...</div>
+
+    <table id="bookTable">
+        <tr>
+            <th>Title</th>
+            <th>Author(s)</th>
+        </tr>
+    </table>
+</body>
+</html>
